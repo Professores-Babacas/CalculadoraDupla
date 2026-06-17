@@ -118,7 +118,11 @@ public class CalculadoraDupla extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubtrairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubtrairActionPerformed
-        // TODO add your handling code here:
+        valor1 = Integer.parseInt(txtNumero1.getText());
+        valor2 = Integer.parseInt(txtNumero1.getText());
+        
+        resultado = valor1 - valor2;
+        lblResultado.setText("O valor é "+resultado);
     }//GEN-LAST:event_btnSubtrairActionPerformed
 
     private void btnSomarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomarActionPerformed
