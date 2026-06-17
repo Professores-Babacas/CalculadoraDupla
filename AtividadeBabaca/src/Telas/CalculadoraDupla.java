@@ -38,8 +38,18 @@ public class CalculadoraDupla extends javax.swing.JFrame {
         jLabel2.setText("Segundo Número:");
 
         btnDividir.setText("Dividir ( / )");
+        btnDividir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDividirActionPerformed(evt);
+            }
+        });
 
         btnMultiplicar.setText("Multiplicar ( * )");
+        btnMultiplicar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMultiplicarActionPerformed(evt);
+            }
+        });
 
         btnSubtrair.setText("Subtrair ( - )");
         btnSubtrair.addActionListener(new java.awt.event.ActionListener() {
@@ -132,6 +142,18 @@ public class CalculadoraDupla extends javax.swing.JFrame {
         resultado = valor1 + valor2;
         lblResultado.setText("O valor é "+resultado);
     }//GEN-LAST:event_btnSomarActionPerformed
+
+    private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
+            valor1 = Integer.parseInt(txtNumero1.getText());
+        valor2 = Integer.parseInt(txtNumero2.getText());
+        
+        resultado = valor1 * valor2;
+        lblResultado.setText("O valor é "+resultado);
+    }//GEN-LAST:event_btnMultiplicarActionPerformed
+
+    private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
+
+    }//GEN-LAST:event_btnDividirActionPerformed
 
     /**
      * @param args the command line arguments
