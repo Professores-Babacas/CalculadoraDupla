@@ -152,7 +152,11 @@ public class CalculadoraDupla extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMultiplicarActionPerformed
 
     private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
-
+            valor1 = Integer.parseInt(txtNumero1.getText());
+        valor2 = Integer.parseInt(txtNumero2.getText());
+        
+        resultado = valor1 / valor2;
+        lblResultado.setText("O valor é "+resultado);
     }//GEN-LAST:event_btnDividirActionPerformed
 
     /**
